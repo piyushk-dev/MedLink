@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaPhone, FaEnvelope, FaMapMarkerAlt, FaHeartbeat } from 'react-icons/fa6';
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaPhone, FaEnvelope, FaMapMarkerAlt, FaHeartPulse } from 'react-icons/fa6';
 
 const Footer = () => {
   return (
@@ -11,7 +11,7 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="space-y-4">
             <Link to="/" className="flex items-center space-x-2 group">
-              <FaHeartbeat className="text-2xl text-blue-400 group-hover:text-blue-300 transition-colors" />
+              <FaHeartPulse className="text-2xl text-blue-400 group-hover:text-blue-300 transition-colors" />
               <span className="text-2xl font-bold group-hover:text-blue-300 transition-colors">MedLink</span>
             </Link>
             <p className="text-slate-400 leading-relaxed">
