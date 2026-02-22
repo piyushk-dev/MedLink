@@ -19,7 +19,7 @@ const Contact = () => {
     } else {
       const user = { fullName, email, message };
       console.log(user);
-      fetch("http://16.16.173.47:4000/contact", {
+      fetch("http://localhost:4000/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(user)

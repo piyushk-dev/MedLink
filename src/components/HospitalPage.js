@@ -9,7 +9,7 @@ const HospitalPage = () => {
     useEffect(() => {
         const fetchHospitalData = async () => {
             try {
-              const response = await fetch(`http://16.16.173.47:4000/hospitals/${location}`);
+              const response = await fetch(`http://localhost:4000/hospitals/${location}`);
               const data = await response.json();
               setList(data);
               console.log(data);

@@ -62,7 +62,7 @@ const Signup = () => {
     } else {
       try {
         const response = await fetch(
-          `http://16.16.173.47:4000/verify-account?email=${email}&otp=${otp}`,
+          `http://localhost:4000/verify-account?email=${email}&otp=${otp}`,
           {
             method: "PUT",
             headers: {
@@ -98,7 +98,7 @@ const Signup = () => {
         email,
         password,
       };
-      const response = await fetch("http://16.16.173.47:4000/register", {
+      const response = await fetch("http://localhost:4000/register", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -117,7 +117,7 @@ const Signup = () => {
       console.log(responseJson);
     } catch (error) {
       console.error("Error:", error);
-      toast.error(error);
+      toast.error(error.message || "An error occurred during signup");
     }
   };
 
