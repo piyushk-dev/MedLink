@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FaStethoscope, FaCalendarCheck, FaHeartPulse, FaCapsules, FaPhoneVolume, FaUserMd, FaStar, FaCheckCircle, FaClock, FaShieldAlt } from 'react-icons/fa6';
+import { FaStethoscope, FaCalendarCheck, FaHeartPulse, FaCapsules, FaPhone, FaUserMd, FaStar, FaCheckCircle, FaClock, FaShieldAlt } from 'react-icons/fa6';
 
 const Home = () => {
   const [selectedDoctor, setSelectedDoctor] = useState(null);
@@ -288,7 +288,7 @@ const Home = () => {
               <p className="text-slate-600">Available 24/7 for urgent medical assistance</p>
             </div>
             <a href="tel:+919876543210" className="mt-4 md:mt-0 inline-flex items-center space-x-3 px-6 py-3 bg-red-600 text-white font-semibold rounded-lg hover:bg-red-700 transition-colors duration-300">
-              <FaPhoneVolume /> Call: +91-9876-543-210
+              <FaPhone /> Call: +91-9876-543-210
             </a>
           </div>
         </div>
@@ -296,5 +296,7 @@ const Home = () => {
     </div>
   );
 };
+
+export default Home;
 
 export default Home;
