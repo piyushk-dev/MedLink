@@ -37,7 +37,7 @@ const Appointments = () => {
         const { id } = jwtDecode(token);
         const data = { ...formData, patientId: id };
         console.log(data);
-        const response = await fetch('http://16.16.173.47:4000/appointment', {
+        const response = await fetch('http://localhost:4000/appointment', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
