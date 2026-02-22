@@ -16,6 +16,8 @@ const ErrorElement = lazy(() => import("./components/ErrorElement"));
 const Login = lazy(() => import("./components/Login"));
 const AboutUs = lazy(() => import("./components/AboutUs"));
 const Signup = lazy(() => import("./components/Signup"));
+const DoctorDirectory = lazy(() => import("./components/DoctorDirectory"));
+const CalendarBooking = lazy(() => import("./components/CalendarBooking"));
 
 const AppLayout = () => {
   return (
@@ -103,6 +105,22 @@ const appRouter = createBrowserRouter([
         element: (
           <Suspense fallback={<Loader />}>
             <Signup />
+          </Suspense>
+        ),
+      },
+      {
+        path: "/doctors",
+        element: (
+          <Suspense fallback={<Loader />}>
+            <DoctorDirectory />
+          </Suspense>
+        ),
+      },
+      {
+        path: "/calendar-booking",
+        element: (
+          <Suspense fallback={<Loader />}>
+            <CalendarBooking />
           </Suspense>
         ),
       },
