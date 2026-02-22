@@ -273,7 +273,7 @@ const Home = () => {
               Book Now
             </Link>
             <button className="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:bg-opacity-10 transition-colors duration-300">
-              <FaPhoneVolume className="mr-2" /> Call Us
+              <FaPhone className="mr-2" /> Call Us
             </button>
           </div>
         </div>
