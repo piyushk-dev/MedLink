@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { jwtDecode } from "jwt-decode";
-import { FaBars, FaTimes, FaHeartbeat } from "react-icons/fa6";
+import { FaBars, FaX, FaHeartPulse } from "react-icons/fa6";
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -22,7 +22,7 @@ const Header = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2 group">
-            <FaHeartbeat className="text-2xl text-blue-600 group-hover:text-blue-700 transition-colors" />
+            <FaHeartPulse className="text-2xl text-blue-600 group-hover:text-blue-700 transition-colors" />
             <span className="text-2xl font-bold text-slate-900 group-hover:text-blue-600 transition-colors">MedLink</span>
           </Link>
 
@@ -63,7 +63,7 @@ const Header = () => {
             className="lg:hidden text-slate-900 focus:outline-none"
           >
             {isMobileMenuOpen ? (
-              <FaTimes className="w-6 h-6" />
+              <FaX className="w-6 h-6" />
             ) : (
               <FaBars className="w-6 h-6" />
             )}
